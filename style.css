@@ -6,11 +6,15 @@ body {
     background-color: #b8c6db;
     background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
     font-family:'Courier New', Courier, monospace;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     margin: 0;
     min-height: 100vh;
+}
+
+h1,p {
+    text-align: center;
 }
 
 .quiz-container {
@@ -48,7 +52,7 @@ ul li input, label {
 }
 
 button {
-    background-color: #8e44ad;
+    background-color: #c29a45;
     border: none;
     color: white;
     cursor: pointer;
@@ -60,10 +64,20 @@ button {
 }
 
 button:hover {
-    background-color: #732d91;
+    background-color: #e4c436;
 }
 
 button:focus {
-    background-color: #5e3370;
+    background-color: #ac6e46;
     outline: none;
+}
+
+footer {
+    text-align: center;
+    margin: 50px 0px 10px;
+}
+
+footer p .love {
+    color: red;
+    font-size: 23px;
 }

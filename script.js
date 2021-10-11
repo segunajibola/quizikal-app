@@ -1,39 +1,39 @@
 const quizData = [
     {
-        question: "1. How old is Florin Pop?",
-        a: "10",
-        b: "17",
-        c: "26",
-        d: "110",
+        question: "1. General understanding with something",
+        a: "knorledge",
+        b: "knowlegde",
+        c: "knowledge",
+        d: "knowlege",
         correct: "c"
     }, {
-        question: "2. What is the most-used programming language in 2021?",
-        a: "Java",
-        b: "C",
-        c: "Python",
-        d: "JavaScript",
+        question: "2. To talk to oneself",
+        a: "solliloquize",
+        b: "solilloquize",
+        c: "sololiquize",
+        d: "soliloquize",
         correct: "d"
     }, {
-        question: "3. What does HTML stands for?",
-        a: "Hypertext Mark Language",
-        b: "Cascading Style Sheet",
-        c: "JSON Object Notation",
-        d: "Helicopters Terminals Motorboats Lamborginis",
+        question: "3. A large, semi-acquatic, herbivorous African Mammal",
+        a: "hippopotamus",
+        b: "hippoppotamus",
+        c: "hipoppotamus",
+        d: "hippopotammus",
         correct: "a"
     }, {
-        question: "4. What year was JavaScript launched?",
-        a: "1994",
-        b: "1993",
-        c: "2018",
-        d: "1995",
+        question: "4. Troublesome and badly behaved",
+        a: "misschievous",
+        b: "mischeivous",
+        c: "mischievious",
+        d: "mischievous",
         correct: "d"
     }, {
-        question: "5. Who is the President of US?",
-        a: "Micheal Jackson",
-        b: "Anthony Joshua",
-        c: "Mike Tyson",
-        d: "Joe Biden",
-        correct: "d"
+        question: "5. A period of time consisting of one thousand years",
+        a: "millannium",
+        b: "millennium",
+        c: "milennium",
+        d: "millenium",
+        correct: "b"
     }
 ];
 
