@@ -1,38 +1,38 @@
 const quizData = [
     {
-        question: "How old is Florin Pop?",
+        question: "1. How old is Florin Pop?",
         a: "10",
         b: "17",
         c: "26",
         d: "110",
         correct: "c"
     }, {
-        question: "What is the most-used programming language in 2021?",
+        question: "2. What is the most-used programming language in 2021?",
         a: "Java",
         b: "C",
         c: "Python",
         d: "JavaScript",
         correct: "d"
     }, {
-        question: "What does HTML stands for?",
+        question: "3. What does HTML stands for?",
         a: "Hypertext Mark Language",
         b: "Cascading Style Sheet",
         c: "JSON Object Notation",
         d: "Helicopters Terminals Motorboats Lamborginis",
         correct: "a"
     }, {
-        question: "What year was JavaScript launched?",
+        question: "4. What year was JavaScript launched?",
         a: "1994",
         b: "1993",
         c: "2018",
         d: "1995",
         correct: "d"
     }, {
-        question: "Who is the President of US?",
+        question: "5. Who is the President of US?",
         a: "Micheal Jackson",
         b: "Anthony Joshua",
         c: "Mike Tyson",
-        d: "Joe Bidem",
+        d: "Joe Biden",
         correct: "d"
     }
 ];
