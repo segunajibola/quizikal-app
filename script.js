@@ -21,14 +21,14 @@ const quizData = [
         d: "Text Element",
         correct: "a"
     }, {
-        question: "4. We have two types of List Element",
+        question: "4. We have two types of list element",
         a: "Arrange list & Scattered list",
         b: "Number list & Bullet list",
         c: "Form list & Table list",
         d: "Ordered list & Unordered list",
         correct: "d"
     }, {
-        question: "5. We have one of these Heading Element",
+        question: "5. We have these set of heading element",
         a: "h1 - h8",
         b: "h2 - h6",
         c: "h1 - h10",
@@ -82,7 +82,7 @@ const quizData = [
         b: "tg, tt, ty",
         c: "tr, th, td",
         d: "tw, tm, tp",
-        correct: "a"
+        correct: "c"
     }, {
         question: "13. The form element contains which set of elements?",
         a: "label & input elements",
