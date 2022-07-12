@@ -2,7 +2,7 @@
 
 // error_reporting(0);
 
-$name = $_POST['name'];
+$playerName = $_POST['name'];
 $score = filter_input(INPUT_POST, 'score', FILTER_VALIDATE_INT);
 $terms = filter_input(INPUT_POST, 'terms', FILTER_VALIDATE_BOOLEAN);
 
@@ -14,38 +14,41 @@ if ( ! $terms) {
     die("Terms must be accepted");
 }
 
-// var_dump($name, $score, $terms);
+// var_dump($user_name, $score, $terms);
 
 $host = "localhost";
 $dbname = "quiz";
-$name = "root";
+$user_name = "root";
 $password = "";
 
-// "localhost", "root", "", "myDB","3308"
-$conn = mysqli_connect($host, $name, $password, $dbname);
-// $conn = mysqli_connect("localhost", "root", "", "quiz_table", "3306");
+$conn = mysqli_connect($host, $user_name, $password, $dbname);
 
 if (mysqli_connect_errno()) {
     die("Connection error: " . mysqli_connect_error());
 }
 
+// mysqli_connect_errno() returns 0 if there is no error
+
 // echo "Connection successful";
 
-$sql = "INSERT INTO quiz_table (name, score)
+$sql = "INSERT INTO quiz_table (playerName, score)
         VALUES (?, ?)";
 
-$stmt = mysqli_stmt_init($conn);
+// We use ? as placeholders to defend sql injection
+
+$stmt = mysqli_stmt_init($conn); // create a prepared statement object
 
 if ( ! mysqli_stmt_prepare($stmt, $sql)) {
- 
-    die(mysqli_error($conn));
+// mysqli_stmt_prepare($stmt, $sql) function that process the prepare statement and returns a boolean
+    die(mysqli_error($conn)); // syntax error will be called here if anything goes wrong
 }
 
+// binding. s for string i for integer
 mysqli_stmt_bind_param($stmt, "si",
-                       $name,
+                       $playerName,
                        $score);
 
-mysqli_stmt_execute($stmt);
+mysqli_stmt_execute($stmt); // to execute the statement
 
 echo "Record saved.";
 ?>
