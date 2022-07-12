@@ -6,37 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bulma.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Quiz App</h1>
-    <p>Can you answer these HTML, CSS & JavaScript Questions?</p>
-    <!-- <p>The top 3 students win a &#127873;</p> -->
-    <div class="quiz-container" id="quiz">
-        <div class="quiz-header">
-            <h2 id="question">Question 1</h2>
-            <!-- ul>li*4>input+label -->
-            <ul>
-                <li>
-                    <input type="radio" id="a" name="answer" class="answer">
-                    <label id="a_text" for="a">Option A</label>
-                </li>
-                <li>
-                    <input type="radio" id="b" name="answer" class="answer">
-                    <label id="b_text" for="b">Option B</label>
-                </li>
-                <li>
-                    <input type="radio" id="c" name="answer" class="answer">
-                    <label id="c_text" for="c">Option C</label>
-                </li>
-                <li>
-                    <input type="radio" id="d" name="answer" class="answer">
-                    <label id="d_text" for="d">Option D</label>
-                </li>
-            </ul>
+    <div class="columns">
+        <div class="column is-half">
+            <h1>Quiz App</h1>
+    <p>Can you answer these HTML, CSS & JavaScript Questions?</p></div>
+        <div class="column">
+            <div class="quiz-container" id="quiz">
+                <div class="quiz-header">
+                    <h2 id="question">Question 1</h2>
+                    <!-- ul>li*4>input+label -->
+                    <ul>
+                        <li>
+                            <input type="radio" id="a" name="answer" class="answer">
+                            <label id="a_text" for="a">Option A</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="b" name="answer" class="answer">
+                            <label id="b_text" for="b">Option B</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="c" name="answer" class="answer">
+                            <label id="c_text" for="c">Option C</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="d" name="answer" class="answer">
+                            <label id="d_text" for="d">Option D</label>
+                        </li>
+                    </ul>
+                </div>
+                <button id="submit">Submit</button>
+            </div>
+            
+        
         </div>
-        <button id="submit">Submit</button>
-    </div>
+        
+      </div>
+    
+    <!-- <p>The top 3 students win a &#127873;</p> -->
+  
     <footer>
         <p>Built with <span class="love">&#9829</span> by Segun Ajibola</p>
     </footer>
