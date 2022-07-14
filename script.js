@@ -17,9 +17,9 @@ const quizData = [
     , {
         question: "3. What does comment means in HTML, CSS and JavaScript?",
         a: "To tell the browser to ignore the code",
-        a: "To tell VSCode to style the element",
-        a: "To tell the browser to accept the code",
-        a: "To tell the browser to use Github",
+        b: "To tell VSCode to style the element",
+        c: "To tell the browser to accept the code",
+        d: "To tell the browser to use Github",
         correct: "a"
     }
     , {
