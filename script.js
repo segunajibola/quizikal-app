@@ -15,11 +15,11 @@ const quizData = [
         correct: "b"
     }
     , {
-        question: "3. Which element is used to display the title of a webpage?",
-        a: "Title Element",
-        b: "Theme Element",
-        c: "Topbar Element",
-        d: "Text Element",
+        question: "3. What does comment means in HTML, CSS and JavaScript?",
+        a: "To tell the browser to ignore the code",
+        a: "To tell VSCode to style the element",
+        a: "To tell the browser to accept the code",
+        a: "To tell the browser to use Github",
         correct: "a"
     }
     , {
@@ -30,12 +30,12 @@ const quizData = [
         d: "Ordered list & Unordered list",
         correct: "d"
     }, {
-        question: "5. We have these set of heading element",
-        a: "h1 - h8",
-        b: "h2 - h6",
-        c: "h1 - h10",
-        d: "h1 - h6",
-        correct: "d"
+        question: "5. In JavaScript, string represents what?",
+        a: "numbers",
+        b: "paragraph",
+        c: "text",
+        d: "HTML",
+        correct: "c"
     }, {
         question: "6. Which element is used to create paragragh?",
         a: "l element",
@@ -44,18 +44,18 @@ const quizData = [
         d: "p element",
         correct: "d"
     }, {
-        question: "7. Which type of bracket is used in HTML?",
-        a: "<>",
-        b: "[]",
-        c: "{}",
-        d: "()",
+        question: "7. What does Concatenation in JavaScirpt means?",
+        a: "To join strings and numbers with + sign",
+        a: "To add strings and numbers with - sign",
+        a: "To join strings and objects with = sign",
+        a: "To delete strings and numbers together",
         correct: "a"
     }, {
-        question: "8. Which type of bracket is used in CSS?",
-        a: "<>",
-        b: "[]",
-        c: "{}",
-        d: "()",
+        question: "8. Which type of bracket is mainly used in HTML and CSS?",
+        a: "<> and ()",
+        b: "[] and <>",
+        c: "<> and {}",
+        d: "() and {}",
         correct: "c"
     }, {
         question: "9. Which element creates images in our website?",
@@ -79,12 +79,12 @@ const quizData = [
         d: "form element",
         correct: "a"
     }, {
-        question: "12. The table element contains which set of elements?",
-        a: "tr, td, tf",
-        b: "tg, tt, ty",
-        c: "tr, th, td",
-        d: "tw, tm, tp",
-        correct: "c"
+        question: "12. What are the keywords to declare variables in JavaScript?",
+        a: "var, let, letter",
+        b: "var, let, const",
+        c: "vac, tel, function",
+        d: "arr, lets, str",
+        correct: "b"
     }, {
         question: "13. The form element contains which set of elements?",
         a: "label & input elements",
@@ -93,12 +93,12 @@ const quizData = [
         d: "label & title elements",
         correct: "a"
     }, {
-        question: "14. We use HTML, CSS & JavaScript for?",
-        a: "Structure, Style & Editing",
-        b: "Street, Style & Functionality",
-        c: "Structure, Style & Functionality",
-        d: "Style, Struce & Graphics",
-        correct: "c"
+        question: "14. JavaScript operator x+=y means?",
+        a: "x + y = 1",
+        b: "x = x + y",
+        c: "xy = yx",
+        d: "x + y = y",
+        correct: "b"
     }, {
         question: "15. The <br> elements is used for what?",
         a: "To go to a new topic",
@@ -107,19 +107,19 @@ const quizData = [
         d: "To make the label & input big",
         correct: "b"
     }, {
-        question: "16. Padding is used for?",
-        a: "Inside space",
-        b: "Outside space",
-        c: "Middle space",
-        d: "HTML space",
-        correct: "a"
-    }, {
-        question: "17. Margin is used for?",
-        a: "Inside space",
-        b: "Outside space",
-        c: "Middle space",
-        d: "HTML space",
+        question: "16. Padding is used for ______ while Margin is used for __________?",
+        a: "Inside space / Middle space",
+        b: "Inside space / Outside space",
+        c: "Front space / Back space",
+        d: "HTML space / CSS space",
         correct: "b"
+    }, {
+        question: "17. JavaScript start counting variable's index from?",
+        a: "0",
+        b: "1",
+        c: "2",
+        d: "3",
+        correct: "a"
     }, {
         question: "18. Which CSS property is used to increase the size of text?",
         a: "text-size",
@@ -128,12 +128,12 @@ const quizData = [
         d: "increase-size",
         correct: "c"
     }, {
-        question: "19. Which element is used to create the navigation bar on top of every page?",
-        a: "nal element",
-        b: "nav element",
-        c: "power element",
-        d: "form element",
-        correct: "b"
+        question: "19. JavaScript array uses _______ while JavaScript Object uses ________?",
+        a: "[] and {}",
+        b: "() and {}",
+        c: "[] and ()",
+        d: "[] and {]",
+        correct: "a"
     }, {
         question: "20. How do you hover on a text?",
         a: "By putting CSS on the text",
