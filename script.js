@@ -32,7 +32,7 @@ const quizData = [
     }, {
         question: "5. In JavaScript, string represents what?",
         a: "numbers",
-        b: "paragraph",
+        b: "objects and arrays",
         c: "text",
         d: "HTML",
         correct: "c"
@@ -65,16 +65,16 @@ const quizData = [
         d: "images element",
         correct: "b"
     }, {
-        question: "10. HTML attributes are found in the opening tag",
-        a: "True",
-        b: "False",
-        c: "Not sure",
-        d: "It depends",
+        question: "10. How do you call a function in JavaScript?",
+        a: "By adding () after the function name",
+        b: "By adding () before the function name",
+        c: "By adding {} after the function name",
+        d: "By adding [] before the function name",
         correct: "a"
     }, {
         question: "11. Which of these elements does not have closing tag?",
         a: "img element",
-        b: "h  element",
+        b: "h element",
         c: "p element",
         d: "form element",
         correct: "a"
