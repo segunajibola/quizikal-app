@@ -46,9 +46,9 @@ const quizData = [
     }, {
         question: "7. What does Concatenation in JavaScirpt means?",
         a: "To join strings and numbers with + sign",
-        a: "To add strings and numbers with - sign",
-        a: "To join strings and objects with = sign",
-        a: "To delete strings and numbers together",
+        b: "To add strings and numbers with - sign",
+        c: "To join strings and objects with = sign",
+        d: "To delete strings and numbers together",
         correct: "a"
     }, {
         question: "8. Which type of bracket is mainly used in HTML and CSS?",
