@@ -18,21 +18,24 @@
             <div class="column ">
                 <h1 class="title is-1">Quiz App</h1>
             </div>
-            <div class="column ">
-                <p class="subtitle is-4">Can you answer these HTML, CSS & JavaScript Questions?</p>
-            </div>
 
-            <div class="column select is-primary">
+            <div style="padding: 50px;">
                 <label for="test" class="subtitle is-4">Choose a test:</label>
 
-                <select name="test" id="testchoice" class="subtitle is-4">
+                <select name="test" id="testchoice" class="subtitle is-4" onchange ="loadkcpe()">
+                    <option value="ib">HTML and CSS</option>
                     <option value="kcpe">KCPE</option>
-                    <option value="ib">IB</option>
+                    
                     <option value="igcse">IGCSE</option>
                     <option value="alevel">A Level</option>
                 </select>
             </div>
 
+            <div>
+                <p class="subtitle is-4" id="testsubtitle" >Can you answer these HTML, CSS & JavaScript Questions?</p>
+            </div>
+
+           
 
         </div>
         <div class="column is-half">
