@@ -35,11 +35,78 @@ const kcpe = [
     d: "Mars and Uranus",
     correct: "d",
   },
+//
+
+  {
+    question:
+      "Which method of controlling weeds would a farmer apply in a nursery bed?",
+    a: "Uprooting",
+    b: "Digging out",
+    c: "Applying herbicides",
+    d: "Slashing",
+    correct: "a",
+  },
+  {
+    question:
+      "Which one of the following groups consists only of useful small animals?",
+    a: "Termites, butterflies, locusts",
+    b: "Bees, earthworms, locusts",
+    c: "Termites, bees, earthworms",
+    d: "Bees, butterflies, earthworms",
+    correct: "d",
+  },
+  {
+    question:
+      "The following are methods of rotational grazing except",
+    a: "tethering",
+    b: "paddocking",
+    c: "zero grazing",
+    d: "strip grazing",
+    correct: "c",
+  },
+  {
+    question:
+      "Domestic animals are sprayed to control the following except",
+    a: "fleas",
+    b: "ticks",
+    c: "tsetse-flies",
+    d: "tapeworms",
+    correct: "d",
+  },
+
+
+  {
+    question:
+      "A pupil intended to cut a piece of timber to repair a desk. The most appropriate tool for the work would be a",
+    a: "hammer",
+    b: "knife",
+    c: "panga",
+    d: "saw",
+    correct: "d",
+  },
+  {
+    question:
+      "A pupil takes 20 minutes to walk to school on a path covered with red soil during dry weather. During the rainy season, the path becomes slippery making the pupil to take longer time to cover the same distance. To walk faster, the following may be done except",
+    a: "wearing shoes with treads",
+    b: "spreading murram on the path",
+    c: "compressing the path to make it firm",
+    d: "tarmacking the path",
+    correct: "c",
+  },
+  {
+    question:
+      "Which one of the following groups of materials consists only of good conductors of heat?",
+    a: "Plastic, glass, copper",
+    b: "Glass, copper, gold",
+    c: "Iron, silver, plastic",
+    d: "Iron, gold, silver",
+    correct: "d",
+  },
 ];
 
 const quizData = [
   {
-    question: "1. What is the full meaning of HTML?",
+    question: "What is the full meaning of HTML?",
     a: "Hyper Text Markup Language",
     b: "Hyper Type Markup Language",
     c: "Hyper Type Map Language",
@@ -47,7 +114,7 @@ const quizData = [
     correct: "a",
   },
   {
-    question: "2. What is the full meaning of CSS?",
+    question: "What is the full meaning of CSS?",
     a: "Complementing Style Shirt",
     b: "Cascading Style Sheet",
     c: "Cup Snake Snail",
@@ -55,7 +122,7 @@ const quizData = [
     correct: "b",
   },
   {
-    question: "3. Which element is used to display the title of a webpage?",
+    question: "Which element is used to display the title of a webpage?",
     a: "Title Element",
     b: "Theme Element",
     c: "Topbar Element",
@@ -63,7 +130,7 @@ const quizData = [
     correct: "a",
   },
   {
-    question: "4. We have two types of list element",
+    question: "We have two types of list element",
     a: "Arrange list & Scattered list",
     b: "Number list & Bullet list",
     c: "Form list & Table list",
@@ -71,7 +138,7 @@ const quizData = [
     correct: "d",
   },
   {
-    question: "5. We have these set of heading element",
+    question: "We have these set of heading element",
     a: "h1 - h8",
     b: "h2 - h6",
     c: "h1 - h10",
@@ -79,7 +146,7 @@ const quizData = [
     correct: "d",
   },
   {
-    question: "6. Which element is used to create paragragh?",
+    question: "Which element is used to create paragragh?",
     a: "l element",
     b: "m element",
     c: "o element",
@@ -87,7 +154,7 @@ const quizData = [
     correct: "d",
   },
   {
-    question: "7. Which type of bracket is used in HTML?",
+    question: "Which type of bracket is used in HTML?",
     a: "<>",
     b: "[]",
     c: "{}",
@@ -95,7 +162,7 @@ const quizData = [
     correct: "a",
   },
   {
-    question: "8. Which type of bracket is used in CSS?",
+    question: "Which type of bracket is used in CSS?",
     a: "<>",
     b: "[]",
     c: "{}",
@@ -103,7 +170,7 @@ const quizData = [
     correct: "c",
   },
   {
-    question: "9. Which element creates images in our website?",
+    question: "Which element creates images in our website?",
     a: "image element",
     b: "img element",
     c: "i element",
@@ -111,7 +178,7 @@ const quizData = [
     correct: "b",
   },
   {
-    question: "10. HTML attributes are found in the opening tag",
+    question: "HTML attributes are found in the opening tag",
     a: "True",
     b: "False",
     c: "Not sure",
@@ -119,7 +186,7 @@ const quizData = [
     correct: "a",
   },
   {
-    question: "11. Which of these elements does not have closing tag?",
+    question: "Which of these elements does not have closing tag?",
     a: "img element",
     b: "h  element",
     c: "p element",
@@ -127,7 +194,7 @@ const quizData = [
     correct: "a",
   },
   {
-    question: "12. The table element contains which set of elements?",
+    question: "The table element contains which set of elements?",
     a: "tr, td, tf",
     b: "tg, tt, ty",
     c: "tr, th, td",
@@ -135,7 +202,7 @@ const quizData = [
     correct: "c",
   },
   {
-    question: "13. The form element contains which set of elements?",
+    question: "The form element contains which set of elements?",
     a: "label & input elements",
     b: "ul & ol elements",
     c: "p & h elements",
@@ -143,7 +210,7 @@ const quizData = [
     correct: "a",
   },
   {
-    question: "14. We use HTML, CSS & JavaScript for?",
+    question: "We use HTML, CSS & JavaScript for?",
     a: "Structure, Style & Editing",
     b: "Street, Style & Functionality",
     c: "Structure, Style & Functionality",
@@ -151,7 +218,7 @@ const quizData = [
     correct: "c",
   },
   {
-    question: "15. The <br> elements is used for what?",
+    question: "The < b r > elements is used for what?",
     a: "To go to a new topic",
     b: "To go to a new line",
     c: "To make our form beautiful",
@@ -159,7 +226,7 @@ const quizData = [
     correct: "b",
   },
   {
-    question: "16. Padding is used for?",
+    question: "Padding is used for?",
     a: "Inside space",
     b: "Outside space",
     c: "Middle space",
@@ -167,7 +234,7 @@ const quizData = [
     correct: "a",
   },
   {
-    question: "17. Margin is used for?",
+    question: "Margin is used for?",
     a: "Inside space",
     b: "Outside space",
     c: "Middle space",
@@ -175,7 +242,7 @@ const quizData = [
     correct: "b",
   },
   {
-    question: "18. Which CSS property is used to increase the size of text?",
+    question: "Which CSS property is used to increase the size of text?",
     a: "text-size",
     b: "word-size",
     c: "font-size",
@@ -184,7 +251,7 @@ const quizData = [
   },
   {
     question:
-      "19. Which element is used to create the navigation bar on top of every page?",
+      "Which element is used to create the navigation bar on top of every page?",
     a: "nal element",
     b: "nav element",
     c: "power element",
@@ -192,7 +259,7 @@ const quizData = [
     correct: "b",
   },
   {
-    question: "20. How do you hover on a text?",
+    question: "How do you hover on a text?",
     a: "By putting CSS on the text",
     b: "By putting your cursor(mouse) on the text",
     c: "By changing the color",
@@ -220,7 +287,7 @@ function loadQuiz() {
 
   const currentQuizData = quizData[currentQuiz];
 
-  questionEL.innerText = currentQuizData.question;
+  questionEL.innerHTML = currentQuiz+1+"/"+quizData.length+"<br>"+currentQuizData.question;
 
   a_text.innerText = currentQuizData.a;
   b_text.innerText = currentQuizData.b;
@@ -237,7 +304,7 @@ function loadkcpe() {
     console.log(kcpe);
     const currentQuizData = kcpe[currentQuiz];
 
-    questionEL.innerText = currentQuizData.question;
+    questionEL.innerHTML = currentQuiz+1+"/"+kcpe.length+"<br>"+currentQuizData.question;
 
     a_text.innerText = currentQuizData.a;
     b_text.innerText = currentQuizData.b;
@@ -288,18 +355,8 @@ submitBtn.addEventListener("click", () => {
         loadkcpe();
       } else {
         quiz.innerHTML = `
-                <h2>You answered correctly ${score}/${kcpe.length} questions.</h2>
-                <form action="form.php" method="post">
-                    <label for="name" class="submit_label">Fullname</label>
-                    <input type="text" id="name" name="name" class="submit_input"> <br><br>
-                    <label for="score" class="submit_score">Score</label>
-                    <input type="text" id="score" class="submit_score" name="score"> <br> <br>
-                    <label>
-                        <input type="checkbox" name="terms">
-                        I haven't cheated in any way.
-                    </label>
-                    <button>Send score</button>
-                </form>
+                <h2 class="title is-4" style="font-size: 30px; padding-top:50px">You answered correctly ${score}/${kcpe.length} questions.</h2>
+           
 
                 <button onclick="location.reload()">Restart quiz</button>
                 `;
@@ -320,22 +377,34 @@ submitBtn.addEventListener("click", () => {
         loadQuiz();
       } else {
         quiz.innerHTML = `
-                <h2>You answered correctly ${score}/${quizData.length} questions.</h2>
-                <form action="form.php" method="post">
-                    <label for="name" class="submit_label">Fullname</label>
-                    <input type="text" id="name" name="name" class="submit_input"> <br><br>
-                    <label for="score" class="submit_score">Score</label>
-                    <input type="text" id="score" class="submit_score" name="score"> <br> <br>
-                    <label>
-                        <input type="checkbox" name="terms">
-                        I haven't cheated in any way.
-                    </label>
-                    <button>Send score</button>
-                </form>
-
+                <h2 class="title is-4" style="font-size: 30px; padding-top:50px">You answered correctly ${score}/${quizData.length} questions.</h2>
+           
                 <button onclick="location.reload()">Restart quiz</button>
                 `;
       }
     }
   }
 });
+     // <form action="form.php" method="post">
+                //     <label for="name" class="submit_label">Fullname</label>
+                //     <input type="text" id="name" name="name" class="submit_input"> <br><br>
+                //     <label for="score" class="submit_score">Score</label>
+                //     <input type="text" id="score" class="submit_score" name="score"> <br> <br>
+                //     <label>
+                //         <input type="checkbox" name="terms">
+                //         I haven't cheated in any way.
+                //     </label>
+                //     <button>Send score</button>
+                // </form>
+
+                     // <form action="form.php" method="post">
+                //     <label for="name" class="submit_label">Fullname</label>
+                //     <input type="text" id="name" name="name" class="submit_input"> <br><br>
+                //     <label for="score" class="submit_score">Score</label>
+                //     <input type="text" id="score" class="submit_score" name="score"> <br> <br>
+                //     <label>
+                //         <input type="checkbox" name="terms">
+                //         I haven't cheated in any way.
+                //     </label>
+                //     <button>Send score</button>
+                // </form>
