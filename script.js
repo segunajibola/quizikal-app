@@ -35,7 +35,7 @@ const kcpe = [
     d: "Mars and Uranus",
     correct: "d",
   },
-//
+  //
 
   {
     question:
@@ -56,8 +56,7 @@ const kcpe = [
     correct: "d",
   },
   {
-    question:
-      "The following are methods of rotational grazing except",
+    question: "The following are methods of rotational grazing except",
     a: "tethering",
     b: "paddocking",
     c: "zero grazing",
@@ -65,15 +64,13 @@ const kcpe = [
     correct: "c",
   },
   {
-    question:
-      "Domestic animals are sprayed to control the following except",
+    question: "Domestic animals are sprayed to control the following except",
     a: "fleas",
     b: "ticks",
     c: "tsetse-flies",
     d: "tapeworms",
     correct: "d",
   },
-
 
   {
     question:
@@ -218,7 +215,7 @@ const quizData = [
     correct: "c",
   },
   {
-    question: "The < b r > elements is used for what?",
+    question: "The <br> elements is used for what?",
     a: "To go to a new topic",
     b: "To go to a new line",
     c: "To make our form beautiful",
@@ -270,6 +267,8 @@ const quizData = [
 
 const quiz = document.getElementById("quiz");
 const answersEls = document.querySelectorAll(".answer");
+const questionNum = document.getElementById("questionNum");
+
 const questionEL = document.getElementById("question");
 const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
@@ -286,8 +285,8 @@ function loadQuiz() {
   deselectAnswers();
 
   const currentQuizData = quizData[currentQuiz];
-
-  questionEL.innerHTML = currentQuiz+1+"/"+quizData.length+"<br>"+currentQuizData.question;
+  questionNum.innerText = currentQuiz + 1 + "/" + quizData.length;
+  questionEL.innerText = currentQuizData.question;
 
   a_text.innerText = currentQuizData.a;
   b_text.innerText = currentQuizData.b;
@@ -303,8 +302,8 @@ function loadkcpe() {
     deselectAnswers();
     console.log(kcpe);
     const currentQuizData = kcpe[currentQuiz];
-
-    questionEL.innerHTML = currentQuiz+1+"/"+kcpe.length+"<br>"+currentQuizData.question;
+    questionNum.innerText = currentQuiz + 1 + "/" + kcpe.length;
+    questionEL.innerText = currentQuizData.question;
 
     a_text.innerText = currentQuizData.a;
     b_text.innerText = currentQuizData.b;
@@ -339,7 +338,20 @@ function deselectAnswers() {
 }
 const t_select = document.getElementById("testchoice");
 submitBtn.addEventListener("click", () => {
-  // const t_select = document.getElementById("testchoice");
+  const answer = getSelected();
+  const marker = document.getElementById("marker1");
+  if (answer === kcpe[currentQuiz].correct) {
+  
+    marker.innerHTML= '<h6 id="marker1" class="subtitle is-5" style="padding-top: 10px;padding-left: 10px; color: darkgreen;">Correct</h6>';
+    
+  }else{
+    marker.innerHTML= '<h6 id="marker1" class="subtitle is-5" style="padding-top: 10px;padding-left: 10px; color: darkred;">Wrong</h6>';
+  }
+  setTimeout(displayAnswer, 3000);
+ 
+  function displayAnswer() {
+    marker.innerHTML= '';
+     // const t_select = document.getElementById("testchoice");
   if (t_select.value == "kcpe") {
     // check to see the answer
     const answer = getSelected();
@@ -384,27 +396,29 @@ submitBtn.addEventListener("click", () => {
       }
     }
   }
+  }
+ 
 });
-     // <form action="form.php" method="post">
-                //     <label for="name" class="submit_label">Fullname</label>
-                //     <input type="text" id="name" name="name" class="submit_input"> <br><br>
-                //     <label for="score" class="submit_score">Score</label>
-                //     <input type="text" id="score" class="submit_score" name="score"> <br> <br>
-                //     <label>
-                //         <input type="checkbox" name="terms">
-                //         I haven't cheated in any way.
-                //     </label>
-                //     <button>Send score</button>
-                // </form>
+// <form action="form.php" method="post">
+//     <label for="name" class="submit_label">Fullname</label>
+//     <input type="text" id="name" name="name" class="submit_input"> <br><br>
+//     <label for="score" class="submit_score">Score</label>
+//     <input type="text" id="score" class="submit_score" name="score"> <br> <br>
+//     <label>
+//         <input type="checkbox" name="terms">
+//         I haven't cheated in any way.
+//     </label>
+//     <button>Send score</button>
+// </form>
 
-                     // <form action="form.php" method="post">
-                //     <label for="name" class="submit_label">Fullname</label>
-                //     <input type="text" id="name" name="name" class="submit_input"> <br><br>
-                //     <label for="score" class="submit_score">Score</label>
-                //     <input type="text" id="score" class="submit_score" name="score"> <br> <br>
-                //     <label>
-                //         <input type="checkbox" name="terms">
-                //         I haven't cheated in any way.
-                //     </label>
-                //     <button>Send score</button>
-                // </form>
+// <form action="form.php" method="post">
+//     <label for="name" class="submit_label">Fullname</label>
+//     <input type="text" id="name" name="name" class="submit_input"> <br><br>
+//     <label for="score" class="submit_score">Score</label>
+//     <input type="text" id="score" class="submit_score" name="score"> <br> <br>
+//     <label>
+//         <input type="checkbox" name="terms">
+//         I haven't cheated in any way.
+//     </label>
+//     <button>Send score</button>
+// </form>
