@@ -340,6 +340,7 @@ const t_select = document.getElementById("testchoice");
 submitBtn.addEventListener("click", () => {
   const answer = getSelected();
   const marker = document.getElementById("marker1");
+  if (t_select.value == "kcpe"){
   if (answer === kcpe[currentQuiz].correct) {
   
     marker.innerHTML= '<h6 id="marker1" class="subtitle is-5" style="padding-top: 10px;padding-left: 10px; color: darkgreen;">Correct</h6>';
@@ -348,7 +349,16 @@ submitBtn.addEventListener("click", () => {
     marker.innerHTML= '<h6 id="marker1" class="subtitle is-5" style="padding-top: 10px;padding-left: 10px; color: darkred;">Wrong</h6>';
   }
   setTimeout(displayAnswer, 3000);
- 
+}else{
+  if (answer === quizData[currentQuiz].correct) {
+  
+    marker.innerHTML= '<h6 id="marker1" class="subtitle is-5" style="padding-top: 10px;padding-left: 10px; color: darkgreen;">Correct</h6>';
+    
+  }else{
+    marker.innerHTML= '<h6 id="marker1" class="subtitle is-5" style="padding-top: 10px;padding-left: 10px; color: darkred;">Wrong</h6>';
+  }
+  setTimeout(displayAnswer, 3000);
+}
   function displayAnswer() {
     marker.innerHTML= '';
      // const t_select = document.getElementById("testchoice");
