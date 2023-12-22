@@ -1,4 +1,22 @@
 export const quizData = [
+    {
+      question: "1. What is the full meaning of HTML?",
+      a: "Hyper Text Markup Language",
+      b: "Hyper Type Markup Language",
+      c: "Hyper Type Map Language",
+      d: "Height Type Madeup Language",
+      correct: "a",
+    },
+    {
+      question: "2. What is the full meaning of CSS?",
+      a: "Complementing Style Shirt",
+      b: "Cascading Style Sheet",
+      c: "Cup Snake Snail",
+      d: "Cascading Stress Sheet",
+      correct: "b",
+    }]
+
+export const quizDdata = [
   {
     question: "1. What is the full meaning of HTML?",
     a: "Hyper Text Markup Language",
