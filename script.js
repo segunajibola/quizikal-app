@@ -8,9 +8,10 @@ const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
 const submitBtn = document.getElementById("submit");
+const quiz_header_text = document.getElementById("quiz_header_text");
 // const quizResult = document.getElementById("quizResult");
 
-const quizDdata = [
+const quizData = [
   {
     question: "1. What is the full meaning of HTML?",
     a: "Hyper Text Markup Language",
@@ -19,9 +20,41 @@ const quizDdata = [
     d: "Height Type Madeup Language",
     correct: "a",
   },
+  {
+    question: "2. What is the full meaning of CSS?",
+    a: "Complementing Style Shirt",
+    b: "Cascading Style Sheet",
+    c: "Cup Snake Snail",
+    d: "Cascading Stress Sheet",
+    correct: "b",
+  },
+  {
+    question: "3. What does comment means in HTML, CSS and JavaScript?",
+    a: "To tell the browser to ignore the code",
+    b: "To tell VSCode to style the element",
+    c: "To tell the browser to accept the code",
+    d: "To tell the browser to use Github",
+    correct: "a",
+  },
+  {
+    question: "4. We have two types of list element",
+    a: "Arrange list & Scattered list",
+    b: "Number list & Bullet list",
+    c: "Form list & Table list",
+    d: "Ordered list & Unordered list",
+    correct: "d",
+  },
+  {
+    question: "5. In JavaScript, string represents what?",
+    a: "numbers",
+    b: "objects and arrays",
+    c: "text",
+    d: "HTML",
+    correct: "c",
+  },
 ];
 
-const quizData = [
+const quizDfata = [
   {
     question: "1. What is the full meaning of HTML?",
     a: "Hyper Text Markup Language",
@@ -245,6 +278,27 @@ function loadQuiz() {
   d_text.innerText = currentQuizData.d;
 }
 
+let answerText;
+
+function getCorrectText(option) {
+  switch (option) {
+    case "a":
+      return a_text.innerText;
+      break;
+    case "b":
+      return b.innerText;
+      break;
+    case "c":
+      return c.innerText;
+      break;
+    case "d":
+      return d.innerText;
+      break;
+    default:
+      return;
+  }
+}
+
 function getSelected() {
   let answer = undefined;
 
@@ -255,6 +309,8 @@ function getSelected() {
     if (answerEl.checked) {
       // answer goes from underfined to its id in the html
       answer = answerEl.id;
+      answerText = document.querySelector(`label[for="${answer}"]`).textContent;
+      console.log(answerText);
     }
   });
   // answer is the id here and now equals to the function
@@ -276,14 +332,24 @@ function saveAsPNG() {
     link.click();
   });
 }
+const result = [];
+
+// function storeResult() {}
 
 submitBtn.addEventListener("click", () => {
+  // storeResult()
   // check to see the answer
   const answer = getSelected();
 
   console.log(answer);
 
   if (answer) {
+    result.push({
+      question: quizData[currentQuiz].question,
+      pickedOption: answerText,
+      correctOption: getCorrectText(quizData[currentQuiz].correct),
+    });
+    console.log(result);
     if (answer === quizData[currentQuiz].correct) {
       score++;
     }
@@ -291,10 +357,28 @@ submitBtn.addEventListener("click", () => {
     if (currentQuiz < quizData.length) {
       loadQuiz();
     } else {
+      quiz_header_text.innerHTML = "";
       quiz.innerHTML = `
                 <div id="quizResult">
                     <h2>Result</h2>
-                    <h2>You answered correctly ${score}/${quizData.length} questions.</h2>
+                    <h2>You answered correctly ${score}/${
+        quizData.length
+      } questions.</h2>
+                    <div class="emoji">${
+                      score <= 1
+                        ? "😭"
+                        : score <= 2
+                        ? "😒"
+                        : score <= 3
+                        ? "😉"
+                        : score <= 4
+                        ? "😜"
+                        : score <= 5
+                        ? "😆🙌"
+                        : ""
+                    }</div>
+                    <h3>Time completed:</h3>
+                    <h3>${new Date().toLocaleString()}</h3>
                 </div>
 
                 <!-- <form action="form.php" method="post">
