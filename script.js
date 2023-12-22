@@ -10,7 +10,7 @@ const d_text = document.getElementById("d_text");
 const submitBtn = document.getElementById("submit");
 // const quizResult = document.getElementById("quizResult");
 
-const quizData = [
+const quizDdata = [
   {
     question: "1. What is the full meaning of HTML?",
     a: "Hyper Text Markup Language",
@@ -21,7 +21,7 @@ const quizData = [
   },
 ];
 
-const quizDdata = [
+const quizData = [
   {
     question: "1. What is the full meaning of HTML?",
     a: "Hyper Text Markup Language",
@@ -306,7 +306,7 @@ submitBtn.addEventListener("click", () => {
                 </form>  -->
 
                 <button onclick="location.reload()">Restart quiz</button>
-                <button onclick="saveAsPNG()">Save as PNG</button>
+                <button onclick="saveAsPNG()">Download result as image</button>
                 `;
     }
   }
