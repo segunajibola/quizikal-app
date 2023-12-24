@@ -79,7 +79,17 @@ button:focus {
 }
 
 .emoji {
-    font-size: 100px;
+  font-size: 100px;
+}
+
+.missedHeading {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.missedTable {
+  margin: 5px;
+  text-align: center;
 }
 
 footer {
