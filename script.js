@@ -263,7 +263,6 @@ function getSelected() {
       // answer goes from underfined to its id in the html
       answer = answerEl.id;
       answerText = document.querySelector(`label[for="${answer}"]`).textContent;
-      console.log(answerText);
     }
   });
   // answer is the id here and now equals to the function
@@ -277,7 +276,6 @@ function deselectAnswers() {
 }
 
 function saveAsPNG() {
-  console.log("save");
   html2canvas(document.getElementById("quizResult")).then(function (canvas) {
     var link = document.createElement("a");
     link.href = canvas.toDataURL();
@@ -290,11 +288,8 @@ const result = [];
 // function storeResult() {}
 
 submitBtn.addEventListener("click", () => {
-  // storeResult()
   // check to see the answer
   const answer = getSelected();
-
-  console.log(answer);
 
   if (answer) {
     result.push({
@@ -302,7 +297,6 @@ submitBtn.addEventListener("click", () => {
       pickedOption: answerText,
       correctOption: getCorrectText(quizData[currentQuiz].correct),
     });
-    console.log(result);
     if (answer === quizData[currentQuiz].correct) {
       score++;
     }
