@@ -311,6 +311,9 @@ submitBtn.addEventListener("click", () => {
       loadQuiz();
     } else {
       quiz_header_text.innerHTML = "";
+      const missedAnswers = result.filter(
+        (result) => result.pickedOption !== result.correctOption
+      );
 
       quiz.innerHTML = `
                 <div id="quizResult">
@@ -334,6 +337,9 @@ submitBtn.addEventListener("click", () => {
                     }</div>
                     <h3>Time completed:</h3>
                     <h3>${new Date().toLocaleString()}</h3>
+                    ${
+                      missedAnswers.length > 0
+                        ? `
                     <h3 class="missedHeading">The ones you missed</h3> 
                     <div>
                         <table class="missedTable">
@@ -342,11 +348,7 @@ submitBtn.addEventListener("click", () => {
                                 <th>Picked Option</th>
                                 <th>Correct Option</th>
                             </tr>
-                        ${result
-                          .filter(
-                            (result) =>
-                              result.pickedOption !== result.correctOption
-                          )
+                        ${missedAnswers
                           .map(
                             (missed) => `
                         <tr>
@@ -356,7 +358,11 @@ submitBtn.addEventListener("click", () => {
                         </tr>`
                           )
                           .join("")}
-                        </table>
+                        </table>`
+                        : `<h3>
+                        You got everything.
+                        </h3>`
+                    }
                     </div>
                 </div>
 
