@@ -258,9 +258,7 @@ function getSelected() {
   // loop all answer element and name each answerEl
 
   answersEls.forEach((answerEl) => {
-    // if one of them is checked or clicked
     if (answerEl.checked) {
-      // answer goes from underfined to its id in the html
       answer = answerEl.id;
       answerText = document.querySelector(`label[for="${answer}"]`).textContent;
     }
@@ -285,10 +283,8 @@ function saveAsPNG() {
 }
 const result = [];
 
-// function storeResult() {}
 
 submitBtn.addEventListener("click", () => {
-  // check to see the answer
   const answer = getSelected();
 
   if (answer) {
